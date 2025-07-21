@@ -85,8 +85,6 @@ public :
         for (int i = 0; i < 5; i++) {
             int x = CUR_X + dx[i];
             int y = CUR_Y + dy[i];
-            if (x < 0 || x >= MAP_SIZE || y < 0 || y >= MAP_SIZE) continue;
-            if (MP[x][y] == -1) continue;
             cout << "P(" << x << ", " << y << ") = " << Probability(x, y) << "\n";
         }
     }
